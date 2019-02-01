@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="cache-control" content="no-cache" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8" lang="en">
+        <title></title>
+         </head>
+            <body>
+                
+                 <div class="container">
+                      
+                     <div class="Header"> <div class="img" ><img class="rounded mx-auto d-block animated infinite tada" onmouseout="over()" onmouseover="out()"  id="img" src="angshuk.jpg" height="30%" width="40%" alt="avatar"></div></div>
+                                     
+                     <div class="Content ">
+                         <input class="form-control form-control-lg col-12 shadow-lg p-3 mb-5 bg-white rounded" onmouseover="hey()"onmouseout="hi()" id="search" type="text" placeholder="search here.......">
+                          <button type="button" class="btn btn-outline-secondary shadow-lg p-3 mb-5 bg-white rounded ">Search Here</button>
+                         
+</div>
+                         </div>
+                     <div class="footer"></div>
+                 </div>
+                 <script>
+                 function over(){
+                      var element = document.getElementById("img");
+                     element.className = element.className.replace(/\banimated\b/g, "");
+                 } 
+                   function out(){
+                      var element = document.getElementById("img");
+                      element.classList.add( "animated");
+                 } 
+                 function hey()
+                 {
+                     var element=document.getElementById("search");
+                     element.classList.remove("form-control");
+                 }
+                 function hi()
+                 {
+                     var element=document.getElementById("search");
+                     element.classList.add("form-control");
+                 }
+                 </script>          
+                </body>
+          
+           </html>
